@@ -54,12 +54,11 @@ body {
     content: "";
     background-color: #fff;
     border-radius: 200vh;
-    transition: ease-in-out 300ms;
     height: 0.4vh;
-    width: 13vh;
+    width: 0;
     position: absolute;
     top: 8vh;
-    opacity: 0;
+    transition: width ease-in-out 300ms;
 }
 
 .ul1 {
@@ -78,8 +77,7 @@ body {
 }
 
 .link1:hover .ul1, .link2:hover .ul2, .link3:hover .ul3 {
-    opacity: 1;
-    transition: ease-in-out 300ms;
+    width: 13vh;
 }
 
 .burger {
